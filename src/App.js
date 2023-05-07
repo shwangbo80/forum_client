@@ -84,7 +84,6 @@ function App() {
 
   return (
     <div className="App">
-      <div>{/* <Header /> */}</div>
       <div className="mainBg">
         <RouterProvider router={router} />
       </div>

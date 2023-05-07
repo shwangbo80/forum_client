@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Container,
-  Button,
-  Form,
-  InputGroup,
-  Row,
-  Col,
-  Navbar,
-} from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import "./header.css";
 import "../../components/navbar/NavbarComponent";
 import Profile from "../profile/Profile";

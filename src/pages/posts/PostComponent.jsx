@@ -1,6 +1,6 @@
 import { React, useState, useEffect } from "react";
-import { Table, Spinner, Image } from "react-bootstrap";
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { Table, Spinner } from "react-bootstrap";
+import { useParams, useNavigate } from "react-router-dom";
 import "./postComponent.css";
 import { useAuth0 } from "@auth0/auth0-react";
 import EditPost from "../../components/EditPost";

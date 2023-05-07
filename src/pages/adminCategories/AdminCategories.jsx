@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from "react";
-import { Row, Col, Spinner, Container, Button } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import CreateCategory from "../../components/CreateCategory";

@@ -1,18 +1,10 @@
-import React, { useEffect } from "react";
-import { Col, Row, Button, Form, Container } from "react-bootstrap";
-import {
-  Link,
-  Outlet,
-  Navigate,
-  useNavigate,
-  redirect,
-} from "react-router-dom";
+import React from "react";
+import { Outlet, redirect } from "react-router-dom";
 import "./admin.css";
 import { useAuth0 } from "@auth0/auth0-react";
-import CreateCategory from "../../components/CreateCategory";
 
 function Admin() {
-  const { user, isAuthenticated, isLoading } = useAuth0();
+  const { user } = useAuth0();
 
   if (!user) {
     redirect("/");

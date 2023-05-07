@@ -1,13 +1,11 @@
 import React from "react";
-import Profile from "../profile/Profile";
 import { Row, Col, Button, Container, Image } from "react-bootstrap";
 import "./home.css";
 import { useAuth0 } from "@auth0/auth0-react";
-import Banner from "../../components/Banner";
 import { Link } from "react-router-dom";
-import LoginButton from "../login/Login";
+
 function HomeComponent() {
-  const { user, isAuthenticated } = useAuth0();
+  const { user } = useAuth0();
 
   const emailVerification = () => {
     try {

@@ -2,7 +2,6 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import "./navbar.css";
 import LoginButton from "../../pages/login/Login";
 import LogoutButton from "../../pages/logout/Logout";
-import Verify from "../../pages/Verify/Verify";
 import { Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 

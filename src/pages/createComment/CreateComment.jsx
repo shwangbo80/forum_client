@@ -1,9 +1,9 @@
-import { React, useEffect, useState } from "react";
+import { React, useState } from "react";
 import { Row, Col, Form, Button } from "react-bootstrap";
 import "./createComment.css";
 import axios from "axios";
 import { useAuth0 } from "@auth0/auth0-react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function CreateComment({ fetchComments, postId, topicId }) {
   const { user } = useAuth0();
