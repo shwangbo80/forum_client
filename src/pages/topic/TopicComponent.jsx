@@ -103,7 +103,7 @@ function TopicComponent() {
   const fetchTopic = async () => {
     try {
       const category = await axios.get(
-        `http://localhost:8800/api/topic/${urlParam.id}`
+        `${process.env.REACT_APP_SERVER_URL}api/topic/${urlParam.id}`
       );
       setTopicData(category.data);
       setTopicLoaded(true);

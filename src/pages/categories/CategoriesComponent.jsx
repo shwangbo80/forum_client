@@ -59,11 +59,10 @@ function CategoriesComponent() {
       .sort(topicSort)
       .map((item) => {
         return (
-          <div className="mt-2">
+          <div className="mt-2" key={item._id}>
             <Link
               className="topicsLink text-darkBlue"
               to={`../forums/topic/${item._id}`}
-              key={item._id}
             >
               {item.topicName}
             </Link>
@@ -80,16 +79,17 @@ function CategoriesComponent() {
       <Row>
         {categoriesData.sort(categorySort).map((item) => {
           return (
-            <Col md={4} key={item._id}>
+            <Col md={4} key={item.categoryName}>
               <hr></hr>
               <div className="pb-3">
                 <div className="">
                   <p className="mb-0 fw-bold text-darkBlue">
                     {item.categoryName}
                   </p>
-                  <p className="text-dark fw-light">
-                    {item.categoryDescription}
-                  </p>
+                  <p
+                    className="text-dark fw-light"
+                    key={item.categoryDescription}
+                  ></p>
                 </div>
                 <Row>{renderCategoryTopics(item._id)}</Row>
               </div>
